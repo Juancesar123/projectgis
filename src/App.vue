@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <hello-world></hello-world>
+    <header-pages></header-pages>
+    <card></card>
+    <level></level>
+    <footer-pages></footer-pages>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import card from './components/card.vue'
+import level from './components/level.vue'
+import FooterPages from './components/footerpages.vue'
+import HeaderPages from './components/header.vue'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    card,
+    level,
+    FooterPages,
+    HeaderPages
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
