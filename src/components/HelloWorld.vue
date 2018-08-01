@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="https://bulma.io">
       <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
@@ -13,12 +13,12 @@
  <div class="navbar-menu" :class="{ 'is-active': showNav }">
   <div class="navbar-start">
     <!-- navbar items -->
-    <a class="navbar-item">
+    <router-link tag="a" active-class="is-active" class="navbar-item" to="/" exact>
       Home
-    </a>
-    <a class="navbar-item">
-      Tempat Makan
-    </a>
+    </router-link>
+    <router-link tag="a" active-class="is-active" class="navbar-item" to="/kuliner" exact>
+      Tempat kuliner
+    </router-link>
     <a class="navbar-item">
       Tempat Wisata
     </a>

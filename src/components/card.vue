@@ -1,5 +1,5 @@
 <template>
-   <section class="section ">
+   <section class="section warnaterang">
       <h1 class="title  has-text-centered">
        Fitur
       </h1>
@@ -87,3 +87,8 @@ export default {
    }
 }
 </script>
+<style lang="scss" scoped>
+.warnaterang {
+    background-color:hsl(0, 0%, 96%)
+}
+</style>

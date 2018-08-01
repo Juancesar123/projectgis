@@ -1,11 +1,11 @@
 <template>
-    <section class="section">
-        <div class="columns">
+    <section class="section warna">
+        <div class="columns is-primary">
             <div class="column">
-                <h1 class="title">
+                <h1 class="title cincai">
                     Hobi traveling
                 </h1>
-                <h3 class="subtitle">
+                <h3 class="subtitle cincai">
                     Hobi traveling adalah sebuah situs yang menyediakan informasi mengenai,
                     kuliner, dan tempat wisata menarik di seluruh indonesia.
                     dan juga terdapat fitur pendukung untuk para traveler seperti: informasi cuaca,
@@ -66,3 +66,12 @@ export default {
   },
 }
 </script>
+<style lang="scss" scoped>
+.warna{
+    background-color: hsl(171, 100%, 41%);
+    margin-top : 10px
+}
+.cincai {
+    color:white
+}
+</style>
